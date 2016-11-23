@@ -1,0 +1,2484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from operationcode.org/code_schools by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2016 15:14:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"17bb3a8c71","applicationID":"14583188","transactionName":"cFheQxRdCFtdFEpXDVdSb0QFWgtYVBVKXQxXUkg=","queueTime":0,"applicationTime":194,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="description" content="Veteran-founded and led, Operation Code is a 501(c)(3) non-profit whose mission is to aid military, vets and their families learn coding and web technologies.">
+  <meta name="keywords" content="operation code, veterans, software development, learn to code, keep coding, veteran coders, senate veterans, house veterans, gi bill, new gi bill, operationcode.org, #operationcode, military vets, vets">
+  <meta name="author" content="Veteran Coders, for Veterans Coders">
+  <title>Operation Code | Open Source Veterans Non-Profit</title>
+
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"></link>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" media="all" href="assets/application-5e9772696695bd29d2321f2e6496398f.css" data-turbolinks-track="true" />
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="oPPwp0ywpr+35Z7aorBWZNaZjQO19e1ahEiN1Dt8RRyYblXLI8BLZ3FTNJfyNlPqiDWE+728PpqEdMZZr0W+0w==" />
+
+  <script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+ga('create','UA-75642413-1','auto');
+ga('send','pageview');
+</script>
+
+  <meta name="google-site-verification" content="nBR2ER8Hcfls6RrkC05coE9yvBWUd3Ugi-helYsZcSs" />
+
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: {
+      families: ['Open Sans']
+    }
+  };
+
+
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script type="text/javascript"> Stripe.setPublishableKey('pk_live_bqebTTza5PGXJcAAaivllE03');</script>
+  <script src="../use.fontawesome.com/3c0f7e9be1.js"></script>
+  <script src="assets/application-392e6306c679dd2a1c1a626fb79810be.js" data-turbolinks-track="true"></script>
+  </head>
+  <body>
+    <ul id="about" class="dropdown-content">
+  <li><a href="history.html">History</a></li>
+  <li><a href="about.html">About Operation Code</a></li>
+  <li><a href="faq.html">Frequently Asked Questions</a></li>
+  <li><a href="press.html">Press Coverage</a></li>
+  <li><a href="newgibill.html">GI Bill Updates</a></li>
+  <li><a href="sponsors.html">Sponsors</a></li>
+  <li class="divider"></li>
+  <li><a href="staff.html">Staff</a></li>
+  <li><a href="board.html">Board of Directors</a></li>
+  <li role="separator" class="divider"></li>
+  <li><a href="http://operationcode.github.io/tap-deck">TAP Briefing</a></li>
+</ul>
+
+<ul id="programs-and-services" class="dropdown-content">
+  <li><a href="code_schools.html">Code Schools</a></li>
+  <li><a href="scholarships.html">Scholarship Program</a></li>
+  <li><a href="mentorship.html">Software Mentorship</a></li>
+  <li><a href="employers.html">Employer Services</a></li>
+  <li><a href="deploy.html">Web Application Development</a></li>
+</ul>
+
+<ul id="Donate" class="dropdown-content">
+  <li><a href="https://cash.me/$operationcode">Square Cash</a></li>
+  <li role="separator" class="divider"></li>
+  <li><a href="https://www.dwolla.com/">Dwolla</a></li>
+  <li role="separator" class="divider"></li>
+  <li><a href="donations/new.html">Online</a></li>
+  <li role="separator" class="divider"></li>
+  <li><a href="https://cottonbureau.com/products/operation-code-medal">Swag</a></li>
+  <li role="separator" class="divider"></li>
+   <li><a href="https://smile.amazon.com/ch/47-4247572">AmazonSmile</a></li>
+</ul>
+
+
+<div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a class="brand-logo" href="index.html"><img src="assets/operationcode_logo-eead949a7ce5220011ea8ddeb9ec5b0a.svg" alt="Operationcode logo" width="200" /></a>
+      <a class="button-collapse top-nav full hide-on-large-only" data-activates="nav-mobile" href="#"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="black-text material-icons">menu</i></a>
+
+      <ul class="right hide-on-med-and-down">
+        <li class='grey-text'><a class="dropdown-button" href="#!" data-constrainwidth="false" data-beloworigin="true" data-activates="about">About<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-constrainwidth="false" data-beloworigin="true" data-activates="programs-and-services">What We Do<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-constrainwidth="false" data-beloworigin="true" data-activates="Donate">Donate<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        <li><a href="success_stories.html">Success Stories</a></li>
+        <li><a target="_blank" href="https://medium.com/operation-code">Blog</a></li>
+          <li>
+            <a class="" href="veterans/sign_up.html">Join</a>
+          </li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav black-text">
+        <li><h6>About</h6></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="about.html">About Operation Code</a></li>
+        <li><a href="faq.html">Frequently Asked Questions</a></li>
+        <li><a href="press.html">Press Coverage</a></li>
+        <li><a href="newgibill.html">GI Bill Updates</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li class="divider"></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="board.html">Board of Directors</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="http://operationcode.github.io/tap-deck">TAP Briefing</a></li>
+        <li role="separator" class="divider"></li>
+
+        <li><h6>What We Do</h6></li>
+        <li><a href="mentorship.html">Software Mentorship</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="employers.html">Employer Services</a></li>
+        <li><a href="fellowships.html">Fellowship Program</a></li>
+        <li><a href="deploy.html">Deploy</a></li>
+        <li><a href="code_schools.html">Code Schools</a></li>
+        <li role="separator" class="divider"></li>
+
+       <li><h6>Donate</h6></li>
+        <li><a href="https://cash.me/$operationcode">SquareCash</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="https://www.dwolla.com/">Dwolla</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="donations/new.html">Online</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="https://smile.amazon.com/ch/47-4247572">Amazon</a></li>
+        <li role="separator" class="divider"></li>
+
+
+        <li><a href="success_stories.html">Success Stories</a></li>
+        <li><a href="https://medium.com/operation-code">Blog</a></li>
+
+          <li>
+            <a class="" href="veterans/sign_up.html">Join</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+    <div class='container'>
+  <div class='row'>
+    <h3 class="header center">Code Schools</h3>
+    <h4 class="header center">Code Schools prepare aspiring programmers for new careers in software development.</h4>
+
+    <p>Code schools are accelerated learning programs that will prepare you for a career in software development. Each school listed below ranges in length, vary in tuition costs, and in programming 
+       languages. Desirable from an employer's standpoint, code schools are founded by software developers who saw a need for more programmers and aspired to teach the next generation.</p>
+
+    <p>We encourage you to check out the schools below, do your research, and ask fellow software developers in <a href="https://operation-code.slack.com/">Slack</a>.</p>
+
+    <h4 class="header center">VA Approved Schools</h4>
+    <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header">
+            <a href="http://sabio.la/">Sabio (Southern California)</a>
+          </div>
+          <div class="collapsible-body">
+            <ul class='collection with-header'>
+              <li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        400 Corporate Pointe
+        <br />Culver City CA 90230
+      </td>
+    </tr>
+      <tr>
+        <td class='key'>Notes</td>
+        <td class='value'>Through its partnership with Antioch, a national non-profit university, Sabio is able to accept GI benefits as described <a href="http://www.antioch.edu/student-services/antioch-university-financial-information/veterans-benefits/" target="_blank" > here</a>. These programs are available at both of Sabio's campuses located in Culver City and Newport Beach, CA.</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        <li>
+          <div class="collapsible-header">
+            <a href="http://refactoru.com/">RefactorU (Boulder, Colorado)</a>
+          </div>
+          <div class="collapsible-body">
+            <ul class='collection with-header'>
+              <li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        5717 Arapahoe Avenue
+          <br />Suite
+        <br />Boulder CO 80303
+      </td>
+    </tr>
+      <tr>
+        <td class='key'>Notes</td>
+        <td class='value'>RefactorU is proud and honored to announce that its Web Development Bootcamp has been approved by the <a href="http://www.benefits.va.gov/gibill/">Colorado State Approving Agency for Veterans Education & Training</a>. Students eligible for the The Post-9/11 GI Bill, Montgomery GI Bill (Active Duty/Selected Reserve), Reserve Educational Assistance Program, Veterans Educational Assistance Program, and Survivors’ and Dependents’ Educational Assistance Program may be eligible to apply those benefits to RefactorU’s Web Application Development Bootcamp.</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        <li>
+          <div class="collapsible-header">
+            <a href="http://turing.io/">Turing School of Software &amp; Design</a>
+          </div>
+          <div class="collapsible-body">
+            <ul class='collection with-header'>
+              <li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        1510 Blake Street
+          <br />Suite
+        <br />Denver CO 80202
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        <li>
+          <div class="collapsible-header">
+            <a href="http://stemuluscenter.org/deep-dive-fullstack">Deep Dive Fullstack</a>
+          </div>
+          <div class="collapsible-body">
+            <ul class='collection with-header'>
+              <li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        20 1st Plaza Center NW
+        <br />Albuquerque, NM NM 87102
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        <li>
+          <div class="collapsible-header">
+            <a href="https://www.codefellows.org/">Code Fellows (Seattle, Washington)</a>
+          </div>
+          <div class="collapsible-body">
+            <ul class='collection with-header'>
+              <li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        511 Boren Ave N.
+        <br />Seattle WA 98109
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        <li>
+          <div class="collapsible-header">
+            <a href="http://codeup.com/">Codeup</a>
+          </div>
+          <div class="collapsible-body">
+            <ul class='collection with-header'>
+              <li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        600 Navarro St., #350
+        <br />San Antonio TX 78205
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </li>
+      </div>
+    </ul>
+
+    <hr>
+
+    <h5 class="header center">Require Code School Technical Assistance for state and VA approval? <br><a href="mailto:schools@operationcode.org">Request technical assistance today.</a></h4>
+
+    <hr>
+
+
+      <h4 class="header center">Code School Scholarships</h4>
+      <p class="lead">Many respective code schools offer military/veterans discounts to make coding education more accessible to those who've worn the uniform and served our country. <b>Apply now and get coding</b>:</p>
+
+      <h5><a href="https://guildsa.org/veterans/" target="_blank">The Guild Of Software Architects (Texas)</a></h5>
+      <p>The Guild of Software Architects offers 50% off tuition ($3000 scholarships) for veterans AND their spouses for their 12 week immersive code bootcamps. <a href="https://guildsa.org/veterans/" target="_blank">Learn more...</a></p>
+
+      <hr>
+
+      <h5><a href="https://www.thinkful.com/pricing/#scholarships" target="_blank">Thinkful (online)</a></h5>
+        <p>Thinkful partnered with Operation Code to offer scholarships for the Web Development Career Path program. Recipients receive $400 off each month they're enrolled for the scholarship to apply. <a href="https://www.thinkful.com/pricing/#scholarships" target="_blank">Learn more...</a></p>
+
+      <hr>
+
+      <h5><a href="http://www.antiochla.edu/academics/bachelors-degree/coding-options/" target="_blank">Sabio (Los Angeles)</a></h5>
+        <p>Sabio enables Operation Code veterans to get a full-time career in coding in six months all while earning credits towards an undergraduate degree. New GI Bill is an option for non-BA degree holders. <a href="http://sabio.la/college" target="_blank">Learn more...</a></p>
+
+      <hr>
+
+      <h5><a href="https://launchschool.com/blog/operation-code-scholarship/" target="_blank">Launch School (online)</a></h5>
+        <p>Launch School is offering Operation Code veterans two full scholarships to one male veteran, and another scholarship to a female veteran. <a href="https://launchschool.com/blog/operation-code-scholarship/" target="_blank">Learn more...</a></p>
+
+      <hr>
+
+      <h5><a href="http://try.bloc.io/operation-code-bootcamp-scholarship/" target="_blank">Bloc (online)</a></h5>
+        <p>Bloc's Web Developer Track offers all veterans $1,000 tuition credit with the remainder of the tuition through financing. <a href="http://try.bloc.io/operation-code-bootcamp-scholarship/" target="_blank">Learn more...</a></p></p>
+
+      <hr>
+
+      <h5><a href="http://go.flatironschool.com/operation-code-overview" target="_blank">The Flatiron School (New York City)</a></h5>
+        <p>New York City-based, Flatiron School provides up to $25,000 in scholarships for Operation Code veterans to participate in the Learn-Verified program which includes, $500 off the first month's tuition for the first 50 eligible applicants. Not sure about committing full-time? Sign up for  <a href="https://learn.co/join/operation-code" target="_blank">Learn.co</a>, an online platform to get introduced to web development and Ruby on Rails. If you get stuck, join the <a href="https://operation-code.slack.com/messages/general/#learn-dot-co" target="_blank"> #learn-dot-co</a> channel in our Slack. <a href="http://go.flatironschool.com/operation-code-overview" target="_blank">Learn more...</a></p>
+        
+      <hr>
+      
+      <h5><a href="https://www.startupinstitute.com/" target="_blank">Startup Institute (Boston and NYC)</a></h5>
+        <p>Startup Institute offers all veterans an <a href="https://www.startupinstitute.com/admissions/scholarships/" target="_blank">automatic $1,000 off</a> the cost of their full-time program. Train to work in the innovation economy in the areas of web development, web design, digital marketing, or sales and account management. Additional scholarships are also available for: Women in Tech, People of Color in Tech, Seasoned Professional in Tech (age 40+), and Excellence in STEM. <a href="https://www.startupinstitute.com/admissions/scholarships/" target="_blank">Learn more...</a></p>
+      
+      <hr>
+
+      <a class="btn btn-large btn-action" href="mailto:staff@operationcode.org" role="button">Partner with us &raquo;</a>
+
+    <hr>
+
+    <h4 class="header center">Code Schools by State</h4>
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header">
+          California
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://devbootcamp.com/">Dev Bootcamp SF</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        633 Folsom Street (at Hawthorne)
+          <br />6th Floor
+        <br />San Francisco CA 94107
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://www.galvanize.it/school/#main">gSchool SoMa</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        Galvanize San Francisco - SoMa
+          <br />543 Howard St
+        <br />San Francisco CA 94015
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://www.hackreactor.com/">Hack Reactor</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        944 Market St
+          <br />8th Floor
+        <br />San Francisco CA 94102
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://www.makersquare.com/">MakerSquare</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        611 Mission St, 2nd Floor
+        <br />San Francisco CA 94105
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://sabio.la/">Sabio (Southern California)</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        400 Corporate Pointe
+        <br />Culver City CA 90230
+      </td>
+    </tr>
+      <tr>
+        <td class='key'>Notes</td>
+        <td class='value'>Through its partnership with Antioch, a national non-profit university, Sabio is able to accept GI benefits as described <a href="http://www.antioch.edu/student-services/antioch-university-financial-information/veterans-benefits/" target="_blank" > here</a>. These programs are available at both of Sabio's campuses located in Culver City and Newport Beach, CA.</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://tradecrafted.com/">Tradecraft</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        400 Corporate Pointe
+        <br />San Fransisco CA 94105
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Colorado
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://www.galvanize.it/school/#main">gSchool Boulder</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        1035 Pearl Street
+          <br />Suite 206
+        <br />Boulder CO 80304
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://refactoru.com/">RefactorU (Boulder, Colorado)</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        5717 Arapahoe Avenue
+          <br />Suite
+        <br />Boulder CO 80303
+      </td>
+    </tr>
+      <tr>
+        <td class='key'>Notes</td>
+        <td class='value'>RefactorU is proud and honored to announce that its Web Development Bootcamp has been approved by the <a href="http://www.benefits.va.gov/gibill/">Colorado State Approving Agency for Veterans Education & Training</a>. Students eligible for the The Post-9/11 GI Bill, Montgomery GI Bill (Active Duty/Selected Reserve), Reserve Educational Assistance Program, Veterans Educational Assistance Program, and Survivors’ and Dependents’ Educational Assistance Program may be eligible to apply those benefits to RefactorU’s Web Application Development Bootcamp.</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://turing.io/">Turing School of Software &amp; Design</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        1510 Blake Street
+          <br />Suite
+        <br />Denver CO 80202
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://partner.devry.edu/bootcamp/">DeVry Bootcamp</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        1870 W 122nd Ave
+        <br />Westminster CO 80234
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Florida
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="https://www.theironyard.com/locations/orlando.html">The Iron Yard at Orlando</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        101 S. Garland Ave
+          <br />Suite 102
+        <br />Orlando FL 32801
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://theironyard.com/locations/tampa-st-petersburg">The Iron Yard at Tampa-St. Petersburg</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        260 1st Ave S
+        <br />Tampa Bay FL 33701
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Georgia
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://theironyard.com/locations/atlanta/">The Iron Yard at Atlanta</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        3423 Piedmont Road, NE
+        <br />Atlanta GA 30305
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="https://generalassemb.ly/education?where=atlanta">General Assembly at Atlanta</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        675 Ponce de Leon Ave NE
+        <br />Atlanta GA 30308
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="https://generalassemb.ly/education?where=atlanta">General Assembly at Atlanta</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        675 Ponce de Leon Ave NE
+        <br />Atlanta GA 30308
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Illinois
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://www.codeplatoon.org/">Code Platoon</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        Downtown
+        <br />Chicago IL 60654
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://devbootcamp.com/">Dev Bootcamp at Chicago</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        351 West Hubbard St. (at Orleans)
+          <br />Suite 701
+        <br />Chicago IL 60605
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://www.starterleague.com/">The Starter League</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        30 N Racine Ave.
+        <br />Chicago IL 60607
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://fullstackacademy.com/">Fullstack Academy at Chicago</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        222 W Merchandise Mart Plaza
+        <br />Chicago IL 60654
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Louisiana
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="https://operationspark.org/">Operation Spark</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        748 Camp Street, 2nd floor
+        <br />New Orleans LA 70130
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Massachusetts
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="https://www.startupinstitute.com/boston/">Startup Institute at Boston</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        50 Milk Street, 14th Floor
+        <br />Boston MA 02109
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          North Carolina
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://theironyard.com/locations/raleigh-durham/">The Iron Yard at Raleigh-Durham</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        334 Blackwell Street
+          <br />Suite B017
+        <br />Durham NC 27701
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          New Mexico
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://stemuluscenter.org/deep-dive-fullstack">Deep Dive Fullstack</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        20 1st Plaza Center NW
+        <br />Albuquerque, NM NM 87102
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          New York
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://devbootcamp.com/">Dev Bootcamp at New York City</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        48 Wall St.
+          <br />15th Floor
+        <br />New York NY 10005
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://fullstackacademy.com/">Fullstack Academy at New York</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        5 Hanover Square
+          <br />Floor 25
+        <br />New York NY 10004
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://flatironschool.com/">The Flatiron School</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        11 Broadway
+          <br />Suite 260
+        <br />New York NY 10004
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://www.thinkful.com/">Thinkful (Online, HQ in NYC)</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        304 Hudson St
+          <br />5th floor
+        <br />New York NY 10013
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://tradecrafted.com/">Tradecraft</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        304 Hudson St
+          <br />5th floor
+        <br />New York NY 10004
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="https://www.startupinstitute.com/new-york/">Startup Institute at NYC</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        25 Broadway, 10th Floor
+        <br />New York City NY 10004
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Oregon
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="https://www.codefellows.org/blog/code-fellows-is-coming-to-portland-this-fall">Code Fellows Portland</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        920 SW Third Ave., 2nd Floor
+        <br />Portaland OR 97204
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://www.epicodus.com/">Epicodus</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        208 SW 5th Ave
+        <br />Portaland OR 97214
+      </td>
+    </tr>
+      <tr>
+        <td class='key'>Notes</td>
+        <td class='value'>(Also see, <a href="http://www.learnhowtoprogram.com/lessons/learn-how-to-program">Learn how to program</a>.)</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://pdxcodeguild.com/">PDX Code Guild</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        2626 SW Corbett Ave
+          <br />Suite 100
+        <br />Portaland OR 97201
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          South Carolina
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://theironyard.com/locations/greenville">The Iron Yard at Charleston</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        510 Mill Street
+        <br />Mount Pleasant SC 29464
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://theironyard.com/locations/greenville">The Iron Yard at Greenville</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        411 University Ridge
+          <br />Suite 220
+        <br />Greenville SC 29601
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://theironyard.com/locations/austin">The Iron Yard at Austin</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        411 University Ridge
+          <br />Suite 220
+        <br />Greenville SC 29601
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Texas
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://theironyard.com/locations/houston">The Iron Yard at Houston</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        1121 Delano St.
+        <br />Houstin TX 77003
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://www.makersquare.com/">MakerSquare</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        716 Congress Ave.,
+        <br />Austin TX 78701
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="https://guildsa.org/">The Guild of Software Architects</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        6170 Research Rd, Suite 107
+        <br />Frisco TX 75033
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://codeup.com/">Codeup</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        600 Navarro St., #350
+        <br />San Antonio TX 78205
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Washington
+        </div>
+        <div class="collapsible-body">
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="http://adadevelopersacademy.org/">Ada Developers Academy</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        Downtown Seattle
+        <br />Seattle WA 98109
+      </td>
+    </tr>
+      <tr>
+        <td class='key'>Notes</td>
+        <td class='value'><strong>Women-only and tuition-free</strong>. One-year program.</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="https://www.codefellows.org/">Code Fellows (Seattle, Washington)</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        511 Boren Ave N.
+        <br />Seattle WA 98109
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+            <ul class='collection with-header'>
+                <li class='collection-header'>
+    <h5>
+      <td class='value'><a href="https://generalassemb.ly/education?where=seattle">General Assembly at Seattle</a></td>
+    </h5>
+  </li>
+<li class='collection-item'>
+<table class=''>
+  <tbody>
+    <tr>
+      <td class='key'>GI Bill Accepted</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Commitment</td>
+      <td class='value'>
+        Full Time
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Hardware Included</td>
+      <td class='value'>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td class='key'>Address</td>
+      <td class='value'>
+        WeWork Seattle
+          <br />500 Yale Avenue N.
+        <br />Seattle WA 98109
+      </td>
+    </tr>
+  </tbody>
+</table>
+</li>
+
+            </ul>
+        </div>
+      </li>
+    </div>
+  </div>
+</div>
+
+<div class='container'>
+  <div class='row'>
+    <a class="btn btn-large btn-action" href="https://github.com/OperationCode/operationcode/blob/master/CONTRIBUTING.md" role="button">Add your code school &raquo;</a>
+  </div>
+</div>
+
+
+    <footer class="page-footer grey lighten-5">
+  <div class="container">
+    <div class="row">
+      <div class="col m3">
+        <h5>Who Are We</h5>
+        <ul>
+          <li><a href="history.html">Our History</a></li>
+          <li><a href="about.html">About Operation Code</a></li>
+          <li><a href="faq.html">Frequently Asked Questions</a></li>
+          <li><a href="https://medium.com/operation-code" target="_blank"></a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="board.html">Board of Directors</a></li>
+        </ul>
+      </div>
+
+      <div class="col m3">
+        <h5>What We Do</h2>
+        <ul>
+          <li><a href="mentorship.html">Software Mentorship</a></li>
+          <li><a href="scholarships.html">Scholarship Program</a></li>
+          <li><a href="employers.html">Employer Services</a></li>
+          <li><a href="deploy.html">Web Application Development</a></li>
+          <li><a href="mailto:schools@operationcode.org">Code School Technical Assistance</a>
+
+        </ul>
+      </div>
+
+      <div class="col m3">
+        <h5>Get Involved</h5>
+        <ul>
+          <li><a href="donations/new.html">Donate</a></li>
+          <li><a href="https://github.com/OperationCode/operationcode/blob/master/CONTRIBUTING.md">Open Source</a></li>
+          <li><a href="mailto:staff@operationcode.org">Software Mentorship</a>
+          <li><a href="mailto:staff@operationcode.org">Internships</a>
+          <li><a href="https://smile.amazon.com/ch/47-4247572">Shop on AmazonSmile</a></li>
+        </ul>
+      </div>
+
+      <div class="col m3">
+        <h5>Press & Media</h5>
+        <ul>
+          <li><a href="press.html">Press Coverage</a></li>
+          <li><a href="newgibill.html">New GI Bill Updates</a></li>
+          <li><a href="mailto:staff@operationcode.org">Press Inquiries</a>
+          <li><a href="veterans/map.html">Veteran Map</a></li>
+          <li><a href="media.html">Download Media</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class='row'>
+      <div class="col m10 offset-m1 center-align">
+        <p><a href="https://www.guidestar.org/profile/47-4247572" target="_blank"><img src="https://widgets.guidestar.org/gximage2?o=9522101&amp;l=v3" /></a></p>
+        <p><em>Operation Code is a tax-exempt 501(c)(3) nonprofit organization. <a href="privacy.html">Donor Privacy Policy and Refund Policy</a></em>. </br>
+        <p>Proudly built with <a href="http://rubyonrails.org/">Ruby on Rails</a>, <a href="http://materializecss.com/">Materialize</a>, and maintained by the <a href="https://github.com/orgs/operationcode/people">core team</a> with the help of our <a href="https://github.com/OperationCode/operationcode/graphs/contributors">contributors</a>.<p>This site is open source. <a href="https://github.com/OperationCode/operationcode/blob/master/CONTRIBUTING.md">All pull requests welcome</a>.</p>
+        <div class="social-links">
+          <a href="https://twitter.com/operation_code" id="twitter" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+          <a href="https://facebook.com/operationcode.org" id="facebook" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+          <a href="https://instagram.com/operation_code" id="instagram" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+          <a href="https://www.snapchat.com/add/operationcode" id="snapchat" target="_blank"><i class="fa fa-snapchat-ghost fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".dropdown-button").dropdown({beloworigin: true});
+        $(".slider").slider({height: 528, indicators: false});
+        $(".button-collapse").sideNav();
+        $('select').material_select();
+        // Hack until https://github.com/Dogfalo/materialize/pull/3379 is merged and on the CDN
+        $('ul.tabs a').on('click', function(e){
+          if($(this).attr("target") ) {
+            window.location = $(this).attr("href");
+          }
+        });
+      });
+    </script>
+  </body>
+
+<!-- Mirrored from operationcode.org/code_schools by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2016 15:14:40 GMT -->
+</html>
